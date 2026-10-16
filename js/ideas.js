@@ -1,0 +1,4 @@
+/* Idea generator: Unscripted Ideas */
+const A=['a podcast','a sneaker brand','a midnight bakery','a farm-to-feed app','a cartoon mascot','a film festival','a coffee label','a fitness cult'],B=['for night owls','that talks back','powered by memes','in one weekend','made for introverts','with zero budget','but make it cinematic','for your grandma'];
+$('#roll').onclick=()=>{const e=$('#idea');e.style.opacity=0;e.style.filter='blur(8px)';setTimeout(()=>{const t=A[Math.random()*A.length|0]+' '+B[Math.random()*B.length|0];e.textContent=t;$('#m').value='Random idea: '+t+'. Let\'s make it real.';e.style.opacity=1;e.style.filter='none'},250)};
+$('#f').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);open('mailto:hello@ground2growth.in?subject='+encodeURIComponent('Idea from '+d.get('n'))+'&body='+encodeURIComponent(d.get('m')+'\n\n'+d.get('n')+' · '+d.get('e')))};
