@@ -57,7 +57,37 @@
 <section id="contact"><span class="tag rv">Contact</span><h2 class="rv">Got an unscripted idea?</h2>
 <p id="idea" aria-live="polite">Press the button. We'll invent one for you.</p>
 <button class="btn" id="roll" type="button">↻ Roll an idea</button>
-<form id="f"><input name="n" placeholder="Your name" required aria-label="Your name"><input name="e" type="email" placeholder="Email" required aria-label="Email"><textarea name="m" id="m" rows="3" placeholder="Tell us your idea…" aria-label="Your idea"></textarea><button class="btn p" type="submit">Send it our way →</button></form>
+
+<form id="f" action="https://formsubmit.co/g2gmedia.in@gmail.com" method="POST">
+  <input
+    name="name"
+    placeholder="Your name"
+    required
+    aria-label="Your name"
+  >
+
+  <input
+    name="email"
+    type="email"
+    placeholder="Email"
+    required
+    aria-label="Email"
+  >
+
+  <textarea
+    name="idea"
+    id="m"
+    rows="3"
+    placeholder="Tell us your idea…"
+    aria-label="Your idea"
+    required
+  ></textarea>
+
+  <input type="hidden" name="_subject" value="New Idea Submission | G2G Media">
+  <input type="hidden" name="_template" value="table">
+
+  <button class="btn p" type="submit">Send it our way →</button>
+</form>
 <p style="margin-top:26px"><a class="btn" href="https://www.instagram.com/ground2growth.in/" target="_blank" rel="noopener">DM @ground2growth.in</a></p></section>
 </main>
 <footer><span>© 2026 G2G Media — Ground to Growth</span><span>Your growth partner. Let's build something bigger.</span></footer>
